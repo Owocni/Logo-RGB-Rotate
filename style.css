@@ -1,0 +1,61 @@
+body{
+background: #222;
+}
+.logo {
+  filter: blur(4px);
+	width: 540px;
+	position: absolute;
+	top: 200px;
+	left: calc(50% - 270px);
+	margin: -20px;
+	font-size: 300px;
+  animation: rot 3s infinite linear;
+  opacity:.6;
+  mix-blend-mode: screen;
+  	/*transform: translateX(-50%);*/
+}
+.logo3 {
+  animation-duration:2s;
+    fill:blue;
+}
+.logo3 * {
+  
+    fill:blue;
+}
+.logo2 {
+  animation-duration:4s;
+  fill:red;
+}
+.logo2 * {
+ 
+  fill:red;
+}
+.logo1 {
+  animation-duration:3s;
+
+}
+.logo1 * {
+  fill:lime;
+}
+.logo4 {
+	width: 540px;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: -20px;
+	font-size: 300px;
+
+}
+@keyframes rot {
+	from {
+		transform: rotate(0deg)
+		           translate(-8px)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-8px) 
+		           rotate(-360deg);
+	}
+}
